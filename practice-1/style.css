@@ -1,0 +1,62 @@
+.container
+{
+    width: 100%;
+    height: 500px;
+    display: flex;
+    gap: 10px;
+}
+.red{
+    background-color: red;
+    width: 50%;
+    height: auto;
+}
+.mixed{
+    width: 50%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.yellow{
+    width: 100%;
+    height: 50%;
+    background-color: yellow;
+}
+.purple-megenda{
+    width: 100%;
+    height: 50%;
+    display: flex;
+    gap: 10px;
+}
+.purple{
+    width: 50%;
+    height: 100%;
+    background-color: purple;
+}
+.megenda{
+    width: 50%;
+    height: 100%;
+    background-color: mediumseagreen;
+}
+@media screen and (max-width:576px) {
+    .container{
+        flex-direction: column;
+        width: 576px;
+        height: auto;
+    }
+    .purple-megenda{
+        flex-direction: column;
+    }
+    .purple{
+        width: 100%;
+
+    }
+.megenda{
+    width: 100%;
+}
+.red,.purple,.yellow,.megenda{
+    height: 300px;
+}
+
+    
+}
